@@ -1,12 +1,12 @@
+import { getConfig, getDMMF } from '@prisma/internals'
+import { execa } from 'execa'
 import glob from 'fast-glob'
-import execa from 'execa'
-import { getDMMF, getConfig } from '@prisma/sdk'
 import { readFile } from 'fs-extra'
 import path from 'path'
 import { Project } from 'ts-morph'
 import { SemicolonPreference } from 'typescript'
-import { configSchema, PrismaOptions } from '../../config'
-import { populateModelFile, generateBarrelFile } from '../../generator'
+import { PrismaOptions, configSchema } from '../../config'
+import { generateBarrelFile, populateModelFile } from '../../generator'
 
 jest.setTimeout(10000)
 
@@ -34,8 +34,8 @@ const ftForDir = (dir: string) => async () => {
 		(generator) => generator.provider.value === 'prisma-client-js'
 	)!
 
-	const outputPath = path.resolve(path.dirname(schemaFile), generator.output!.value)
-	const clientPath = path.resolve(path.dirname(schemaFile), prismaClient.output!.value)
+	const outputPath = path.resolve(path.dirname(schemaFile), generator.output!.value!)
+	const clientPath = path.resolve(path.dirname(schemaFile), prismaClient.output!.value!)
 
 	const prismaOptions: PrismaOptions = {
 		clientPath,

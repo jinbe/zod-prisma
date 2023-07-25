@@ -1,8 +1,8 @@
+import { getDMMF } from '@prisma/internals'
 import path from 'path'
+import { Project } from 'ts-morph'
 import { configSchema, PrismaOptions } from '../config'
 import { writeImportsForModel } from '../generator'
-import { getDMMF } from '@prisma/sdk'
-import { Project } from 'ts-morph'
 
 describe('Regression Tests', () => {
 	test('#92', async () => {
