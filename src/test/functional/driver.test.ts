@@ -1,5 +1,5 @@
 import { getConfig, getDMMF } from '@prisma/internals'
-import * as execa from 'execa'
+import { execa } from 'execa'
 import glob from 'fast-glob'
 import { readFile } from 'fs-extra'
 import path from 'path'
@@ -114,7 +114,7 @@ describe('Functional Tests', () => {
 	test.concurrent('Config Import', ftForDir('config-import'))
 
 	test.concurrent('Type Check Everything', async () => {
-		const typeCheckResults = await execa.execa(
+		const typeCheckResults = await execa(
 			path.resolve(__dirname, '../../../node_modules/.bin/tsc'),
 			['--strict', '--noEmit', ...(await glob(`${__dirname}/*/expected/*.ts`))]
 		)
