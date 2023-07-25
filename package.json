@@ -5,7 +5,6 @@
 	"license": "MIT",
 	"author": "Carter Grimmeisen",
 	"homepage": "https://github.com/CarterGrimmeisen/zod-prisma#readme",
-	"type": "module",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/CarterGrimmeisen/zod-prisma.git"
