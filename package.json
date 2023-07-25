@@ -74,9 +74,9 @@
 		"zod": "^3.21.4"
 	},
 	"peerDependencies": {
-		"decimal.js": "^10.0.0",
-		"prisma": "^4.0.0",
-		"zod": "^3.0.0"
+		"decimal.js": "^10.4.3",
+		"prisma": "^5.0.0",
+		"zod": "^3.21.4"
 	},
 	"peerDependenciesMeta": {
 		"decimal.js": {
