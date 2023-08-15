@@ -22,9 +22,9 @@ generatorHandler({
 
 		const { schemaPath } = options
 		const outputPath = options.generator.output!.value
-		const clientPath = options.otherGenerators.find(
-			(each) => each.provider.value === 'prisma-client-js'
-		)!.output!.value!
+		const clientPath =
+			options.otherGenerators.find((each) => each.provider.value === 'prisma-client-js')
+				?.output?.value ?? ''
 
 		const results = configSchema.safeParse(options.generator.config)
 		if (!results.success)

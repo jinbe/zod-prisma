@@ -35,7 +35,7 @@ const ftForDir = (dir: string) => async () => {
 	)!
 
 	const outputPath = path.resolve(path.dirname(schemaFile), generator.output!.value!)
-	const clientPath = path.resolve(path.dirname(schemaFile), prismaClient.output!.value!)
+	const clientPath = path.resolve(path.dirname(schemaFile), prismaClient?.output?.value ?? '')
 
 	const prismaOptions: PrismaOptions = {
 		clientPath,
