@@ -1,16 +1,16 @@
 {
-	"name": "zod-prisma",
-	"version": "0.5.4",
+	"name": "prisma-zod-schemas",
+	"version": "0.6.0",
 	"description": "A Prisma generator that creates Zod schemas for all of your models",
 	"license": "MIT",
-	"author": "Carter Grimmeisen",
-	"homepage": "https://github.com/CarterGrimmeisen/zod-prisma#readme",
+	"author": "Jin Chan",
+	"homepage": "https://github.com/jinbe/zod-prisma#readme",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/CarterGrimmeisen/zod-prisma.git"
+		"url": "https://github.com/jinbe/zod-prisma.git"
 	},
 	"bugs": {
-		"url": "https://github.com/CarterGrimmeisen/zod-prisma/issues"
+		"url": "https://github.com/jinbe/zod-prisma/issues"
 	},
 	"main": "dist/index.js",
 	"module": "dist/zod-prisma.esm.js",
@@ -85,5 +85,6 @@
 	},
 	"engines": {
 		"node": ">=14"
-	}
+	},
+	"packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

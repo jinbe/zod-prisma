@@ -7,7 +7,7 @@
 ***
 ***
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** CarterGrimmeisen, zod-prisma, twitter_handle, Carter.Grimmeisen@uah.edu, Zod Prisma, A custom prisma generator that creates Zod schemas from your Prisma model.
+*** jinbe, zod-prisma, twitter_handle, jin@jinathy.com, Zod Prisma, A custom prisma generator that creates Zod schemas from your Prisma model.
 -->
 
 <!-- PROJECT SHIELDS -->
@@ -29,21 +29,21 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/CarterGrimmeisen/zod-prisma">
-    <img src="https://raw.githubusercontent.com/CarterGrimmeisen/zod-prisma/main/images/zod-prisma.svg" alt="Logo" width="120" height="120">
+  <a href="https://github.com/jinbe/zod-prisma">
+      <img src="https://raw.githubusercontent.com/jinbe/zod-prisma/main/images/zod-prisma.svg" alt="Logo" width="120" height="120">
   </a>
   <h3 align="center">Zod Prisma</h3>
   <p align="center">
     A custom prisma generator that creates Zod schemas from your Prisma model.
     <br />
-    <a href="https://github.com/CarterGrimmeisen/zod-prisma"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/jinbe/zod-prisma"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/CarterGrimmeisen/zod-prisma/blob/main/src/test/functional">View Demo</a>
+    <a href="https://github.com/jinbe/zod-prisma/blob/main/src/test/functional">View Demo</a>
     ·
-    <a href="https://github.com/CarterGrimmeisen/zod-prisma/issues">Report Bug</a>
+    <a href="https://github.com/jinbe/zod-prisma/issues">Report Bug</a>
     ·
-    <a href="https://github.com/CarterGrimmeisen/zod-prisma/issues">Request Feature</a>
+    <a href="https://github.com/jinbe/zod-prisma/issues">Request Feature</a>
   </p>
 </p>
 
@@ -81,6 +81,7 @@
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
+    <li><a href="#attribution">Attribution</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -119,10 +120,16 @@ npm install -g yarn
 0.  **Ensure your tsconfig.json enables the compiler's strict mode.**
     **Zod requires it and so do we, you will experience TS errors without strict mode enabled**
 
-1.  Add zod-prisma as a dev dependency
+1.  Add prisma-zod-schema as a dev dependency
 
     ```sh
-    yarn add -D zod-prisma
+    yarn add -D prisma-zod-schema
+    ```
+    ```sh
+    pnpm add -D prisma-zod-schema
+    ```
+    ```sh
+    npm install -D prisma-zod-schema
     ```
 
 2.  Add the zod-prisma generator to your schema.prisma
@@ -270,13 +277,13 @@ you can set `prismaJsonNullability` to `false` in the generator options.
 
 <!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. -->
 
-_For examples, please refer to the [Examples Directory](https://github.com/CarterGrimmeisen/zod-prisma/blob/main/examples) or the [Functional Tests](https://github.com/CarterGrimmeisen/zod-prisma/blob/main/src/test/functional)_
+_For examples, please refer to the [Examples Directory](https://github.com/jinbe/zod-prisma/blob/main/examples) or the [Functional Tests](https://github.com/jinbe/zod-prisma/blob/main/src/test/functional)_
 
 <!-- ROADMAP -->
 
 ## Roadmap
 
-See the [open issues](https://github.com/CarterGrimmeisen/zod-prisma/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/jinbe/zod-prisma/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 
@@ -296,26 +303,35 @@ Contributions are what make the open source community such an amazing place to b
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
+## Attribution
+
+This code is a fork of [zod-prisma](https://github.com/CarterGrimmeise/zod-prisma) by Carter Grimmeisen.
+
+**Original author:** Carter Grimmeisen (Carter.Grimmeisen@uah.edu)
+**GitHub repository:** https://github.com/CarterGrimmeise/zod-prisma
+
+Used under license terms specified in the original repository.
+
 <!-- CONTACT -->
 
 ## Contact
 
 Carter Grimmeisen - Carter.Grimmeisen@uah.edu
 
-Project Link: [https://github.com/CarterGrimmeisen/zod-prisma](https://github.com/CarterGrimmeisen/zod-prisma)
+Project Link: [https://github.com/jinbe/zod-prisma](https://github.com/jinbe/zod-prisma)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[npm-shield]: https://img.shields.io/npm/v/zod-prisma?style=for-the-badge
-[npm-url]: https://www.npmjs.com/package/zod-prisma
-[contributors-shield]: https://img.shields.io/github/contributors/CarterGrimmeisen/zod-prisma.svg?style=for-the-badge
-[contributors-url]: https://github.com/CarterGrimmeisen/zod-prisma/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/CarterGrimmeisen/zod-prisma.svg?style=for-the-badge
-[forks-url]: https://github.com/CarterGrimmeisen/zod-prisma/network/members
-[stars-shield]: https://img.shields.io/github/stars/CarterGrimmeisen/zod-prisma.svg?style=for-the-badge
-[stars-url]: https://github.com/CarterGrimmeisen/zod-prisma/stargazers
-[issues-shield]: https://img.shields.io/github/issues/CarterGrimmeisen/zod-prisma.svg?style=for-the-badge
-[issues-url]: https://github.com/CarterGrimmeisen/zod-prisma/issues
-[license-shield]: https://img.shields.io/github/license/CarterGrimmeisen/zod-prisma.svg?style=for-the-badge
-[license-url]: https://github.com/CarterGrimmeisen/zod-prisma/blob/main/LICENSE
+[npm-shield]: https://img.shields.io/npm/v/prisma-zod-schemas?style=for-the-badge
+[npm-url]: https://www.npmjs.com/package/prisma-zod-schemas
+[contributors-shield]: https://img.shields.io/github/contributors/jinbe/zod-prisma.svg?style=for-the-badge
+[contributors-url]: https://github.com/jinbe/zod-prisma/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/jinbe/zod-prisma.svg?style=for-the-badge
+[forks-url]: https://github.com/jinbe/zod-prisma/network/members
+[stars-shield]: https://img.shields.io/github/stars/jinbe/zod-prisma.svg?style=for-the-badge
+[stars-url]: https://github.com/jinbe/zod-prisma/stargazers
+[issues-shield]: https://img.shields.io/github/issues/jinbe/zod-prisma.svg?style=for-the-badge
+[issues-url]: https://github.com/jinbe/zod-prisma/issues
+[license-shield]: https://img.shields.io/github/license/jinbe/zod-prisma.svg?style=for-the-badge
+[license-url]: https://github.com/jinbe/zod-prisma/blob/main/LICENSE
